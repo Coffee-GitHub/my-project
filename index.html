@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Design Your Roof</title>
+</head>
+<html>
+    <body>
+        <div class="content">
+            <!-- <h2>Design Your Roof</h2> -->
+            <div id="tile" class="tile">
+                <img src="images/tile/classic.jpg" id="classic" onclick="classic()">
+                <img src="images/tile/corona.jpg" id="corona" onclick="corona()">
+                <img src="images/tile/heritage.jpg" id="heritage" onclick="heritage()">
+                <img src="images/tile/milano.jpg" id="milano" onclick="milano()">
+                <img src="images/tile/senator.jpg" id="senator" onclick="senator()">
+            </div>
+
+            <div class="trim-option" id="trim-option">
+                <ul>
+                    <li>TRIM OPTION</li>
+                    <li>
+                        <img src="images/trim/barrel.jpg" onclick="document.getElementById('myBarrel').src='images/trim/barrel.png'">
+                        <br>Barrel 150
+                    </li>
+                    <li>
+                        <img src="images/trim/angle.jpg" onclick="document.getElementById('myBarrel').src='images/trim/angle-trim.png'">
+                        <br>Angle Trim
+                    </li>
+                    <li>
+                        <img src="images/trim/box.jpg" onclick="document.getElementById('myBarrel').src='images/trim/box-barge.png'">
+                        <br>Box Barge
+                    </li>
+                </ul>
+            </div>
+
+            <div class="roof">
+                <div class="design-roof">
+                    <img id="myRoof" src="images/tile/classic.png">
+                    <img id="myBarrel" src="images/trim/barrel.png">
+                    <img class="house" src="images/house-image/house.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="divColor">
+            <div class="classic-color" id="classic-color">
+                <table>
+                    <tr>
+                        <td>
+                            Cedar<br>
+                            <img src="images/color/cedar.jpg" onclick="Cedar()">
+                        </td>
+                        <td>
+                            Charcoal<br>
+                            <img src="images/color/charcoal.jpg" onclick="Charcoal()">
+                        </td>
+                        <td>
+                            Garnet<br>
+                            <img src="images/color/garnet.jpg" onclick="Garnet()">
+                        </td>
+                        <td>
+                            Greenstone<br>
+                            <img src="images/color/greenstone.jpg" onclick="Greenstone()">
+                        </td>
+                        <td>
+                            Pepper<br>
+                            <img src="images/color/pepperstone.jpg" onclick="Pepper()">
+                        </td>
+                        <td>
+                            Rosso<br>
+                            <img src="images/color/rosso.jpg" onclick="Rosso()">
+                        </td>
+                        <td>
+                            Sage<br>
+                            <img src="images/color/sage.jpg" onclick="Sage()">
+                        </td>
+                        <td>
+                            Sapphire<br>
+                            <img src="images/color/sapphire.jpg" onclick="Sapphire()">
+                        </td>
+                        <td>
+                            Sienna<br>
+                            <img src="images/color/sienna.jpg" onclick="Sienna()">
+                        </td>
+                        <td>
+                            Teak<br>
+                            <img src="images/color/teak.jpg" onclick="Teak()">
+                        </td>
+                        <td>
+                            Terracotta<br>
+                            <img src="images/color/terracotta.jpg" onclick="Terracotta()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="milano-color" id="milano-color" style="display: none;">
+                <table>
+                    <tr>
+                        <td>
+                            Cedar<br>
+                            <img src="images/color/cedar.jpg" onclick="Cedar()">
+                        </td>
+                        <td>
+                            Charcoal<br>
+                            <img src="images/color/charcoal.jpg" onclick="Charcoal()">
+                        </td>
+                        <td>
+                            Garnet<br>
+                            <img src="images/color/garnet.jpg" onclick="Garnet()">
+                        </td>
+                        <td>
+                            Greenstone<br>
+                            <img src="images/color/greenstone.jpg" onclick="Greenstone()">
+                        </td>
+                        <td>
+                            Pepper<br>
+                            <img src="images/color/pepperstone.jpg" onclick="Pepper()">
+                        </td>
+                        <td>
+                            Rosso<br>
+                            <img src="images/color/rosso.jpg" onclick="Rosso()">
+                        </td>
+                        <td>
+                            Sage<br>
+                            <img src="images/color/sage.jpg" onclick="Sage()">
+                        </td>
+                        <td>
+                            Sapphire<br>
+                            <img src="images/color/sapphire.jpg" onclick="Sapphire()">
+                        </td>
+                        <td>
+                            Sienna<br>
+                            <img src="images/color/sienna.jpg" onclick="Sienna()">
+                        </td>
+                        <td>
+                            Teak<br>
+                            <img src="images/color/teak.jpg" onclick="Teak()">
+                        </td>
+                        <td>
+                            Terracotta<br>
+                            <img src="images/color/terracotta.jpg" onclick="Terracotta()">
+                        </td>
+                        <td>
+                            Copper Red<br>
+                            <img src="images/color/copperred.jpg" onclick="CopperRed()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="senator-color" id="senator-color" style="display: none;">
+                <table>
+                    <tr>
+                        <td>
+                            Bark<br>
+                            <img src="images/color/bark.jpg" onclick="Bark()">
+                        </td>
+                        <td>
+                            Eclipse<br>
+                            <img src="images/color/eclipse.jpg" onclick="Eclipse()">
+                        </td>
+                        <td>
+                            Portland<br>
+                            <img src="images/color/portland.jpg" onclick="Portland()">
+                        </td>
+                        <td>
+                            Ravine<br>
+                            <img src="images/color/ravine.jpg" onclick="Ravine()">
+                        </td>
+                        <td>
+                            Sunset<br>
+                            <img src="images/color/sunset.jpg" onclick="Sunset()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            function classic() {
+                document.getElementById('myRoof').src="images/tile/classic.png";
+                var x = document.getElementById("myRoof");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(80%) contrast(120%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("myBarrel");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(1000%) hue-rotate(64deg) brightness(50%) contrast(100%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+                
+                var x = document.getElementById("classic-color");
+                if (x.style.display = "none") {
+                    x.style.display = "block";
+                }
+                var x = document.getElementById("milano-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("senator-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+            }
+            function corona() {
+                document.getElementById('myRoof').src="images/tile/corona.png";
+                var x = document.getElementById("myRoof");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(80%) contrast(120%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("myBarrel");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(1000%) hue-rotate(64deg) brightness(50%) contrast(100%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("classic-color");
+                if (x.style.display = "none") {
+                    x.style.display = "block";
+                }
+                var x = document.getElementById("milano-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("senator-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+            }
+            function heritage() {
+                document.getElementById('myRoof').src="images/tile/heritage.png";
+                var x = document.getElementById("myRoof");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(80%) contrast(120%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("myBarrel");
+                if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(1000%) hue-rotate(64deg) brightness(50%) contrast(100%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("classic-color");
+                if (x.style.display = "none") {
+                    x.style.display = "block";
+                }
+                var x = document.getElementById("milano-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("senator-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+            }
+            function milano() {
+                document.getElementById('myRoof').src="images/tile/milano.png";
+                var x = document.getElementById("myRoof");
+                if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(80%) contrast(120%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("myBarrel");
+                if (x.style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(1000%) hue-rotate(64deg) brightness(50%) contrast(100%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("milano-color");
+                if (x.style.display = "none") {
+                    x.style.display = "block";
+                }
+                var x = document.getElementById("classic-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("senator-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+            }
+            function senator() {
+                document.getElementById('myRoof').src="images/tile/senator.png";
+                var x = document.getElementById("myRoof");
+                if (x.style.filter = "invert(12%) sepia(10%) saturate(0%) hue-rotate(170deg) brightness(50%) contrast(93%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(50%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(50%) contrast(90%) grayscale(75%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(90%) contrast(110%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(600%) hue-rotate(19deg) brightness(65%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(10%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(55%) contrast(101%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(150%) hue-rotate(185deg) brightness(55%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(550%) hue-rotate(19deg) brightness(110%) contrast(85%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(500%) hue-rotate(19deg) brightness(30%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(800%) hue-rotate(19deg) brightness(65%) contrast(120%) grayscale(55%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("myBarrel");
+                if (x.style.filter = "invert(12%) sepia(10%) saturate(0%) hue-rotate(170deg) brightness(50%) contrast(93%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(50%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(50%) contrast(90%) grayscale(75%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(90%) contrast(110%) grayscale(90%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(600%) hue-rotate(19deg) brightness(65%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(10%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(55%) contrast(101%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(16%) sepia(5%) saturate(150%) hue-rotate(185deg) brightness(55%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(550%) hue-rotate(19deg) brightness(110%) contrast(85%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(500%) hue-rotate(19deg) brightness(30%) contrast(99%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(52%) saturate(800%) hue-rotate(19deg) brightness(65%) contrast(120%) grayscale(55%)") {
+                    x.style.filter = "none";
+                }
+                else if (x.style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)") {
+                    x.style.filter = "none";
+                }
+
+                var x = document.getElementById("senator-color");
+                if (x.style.display = "none") {
+                    x.style.display = "block";
+                }
+                var x = document.getElementById("classic-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("milano-color");
+                if (x.style.display = "block") {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
+        <script>
+            function Cedar() {
+                document.getElementById("myRoof").style.filter = "none";
+                document.getElementById("myBarrel").style.filter = "none";
+            }
+            function Charcoal() {
+                document.getElementById("myRoof").style.filter = "invert(12%) sepia(10%) saturate(0%) hue-rotate(170deg) brightness(50%) contrast(93%)";
+                document.getElementById("myBarrel").style.filter = "invert(12%) sepia(10%) saturate(0%) hue-rotate(170deg) brightness(50%) contrast(93%)";
+            }
+            function Garnet() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(50%) contrast(99%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(50%) contrast(99%)";
+            }
+            function Greenstone() {
+                document.getElementById("myRoof").style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(50%) contrast(90%) grayscale(75%)";
+                document.getElementById("myBarrel").style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(50%) contrast(90%) grayscale(75%)";
+            }
+            function Pepper() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(90%) contrast(110%) grayscale(90%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(1000%) hue-rotate(19deg) brightness(90%) contrast(110%) grayscale(90%)";
+            }
+            function Rosso() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(600%) hue-rotate(19deg) brightness(65%) contrast(99%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(600%) hue-rotate(19deg) brightness(65%) contrast(99%)";
+            }
+            function Sage() {
+                document.getElementById("myRoof").style.filter = "invert(10%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(55%) contrast(101%)";
+                document.getElementById("myBarrel").style.filter = "invert(10%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(55%) contrast(101%)";
+            }
+            function Sapphire() {
+                document.getElementById("myRoof").style.filter = "invert(16%) sepia(5%) saturate(150%) hue-rotate(185deg) brightness(55%) contrast(99%)";
+                document.getElementById("myBarrel").style.filter = "invert(16%) sepia(5%) saturate(150%) hue-rotate(185deg) brightness(55%) contrast(99%)";
+            }
+            function Sienna() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(550%) hue-rotate(19deg) brightness(110%) contrast(85%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(550%) hue-rotate(19deg) brightness(110%) contrast(85%)";
+            }
+            function Teak() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(500%) hue-rotate(19deg) brightness(30%) contrast(99%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(500%) hue-rotate(19deg) brightness(30%) contrast(99%)";
+            }
+            function Terracotta() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(52%) saturate(800%) hue-rotate(19deg) brightness(65%) contrast(120%) grayscale(55%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(52%) saturate(800%) hue-rotate(19deg) brightness(65%) contrast(120%) grayscale(55%)";
+            }
+            function CopperRed() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(16%) saturate(800%) hue-rotate(8deg) brightness(140%) contrast(45%)";
+            }
+
+            function Bark() {
+                document.getElementById("myRoof").style.filter = "none";
+                document.getElementById("myBarrel").style.filter = "none";
+            }
+            function Eclipse() {
+                document.getElementById("myRoof").style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)";
+                document.getElementById("myBarrel").style.filter = "grayscale(120%) brightness(80%) contrast(100%) hue-rotate(100deg) saturate(3000%)";
+            }
+            function Portland() {
+                document.getElementById("myRoof").style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)";
+                document.getElementById("myBarrel").style.filter = "invert(5%) sepia(80%) saturate(1200%) hue-rotate(19deg) brightness(80%) contrast(110%) grayscale(82%)";
+            }
+            function Ravine() {
+                document.getElementById("myRoof").style.filter = "invert(16%) sepia(5%) saturate(500%) hue-rotate(64deg) brightness(80%) contrast(120%) grayscale(90%)";
+                document.getElementById("myBarrel").style.filter = "invert(16%) sepia(5%) saturate(1000%) hue-rotate(64deg) brightness(50%) contrast(100%) grayscale(90%)";
+            }
+            function Sunset() {
+                document.getElementById("myRoof").style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)";
+                document.getElementById("myBarrel").style.filter = "brightness(120%) contrast(120%) saturate(190%) grayscale(30%)";
+            }
+        </script>
+    </body>
+</html>
